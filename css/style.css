@@ -42,7 +42,8 @@ body{
 }
 
 .card.active{
-    height: 450px;
+    /* height: 450px; */
+    height: auto;
     transition-delay: 0s;
     /* margin-bottom: 130px; */
 }
@@ -72,14 +73,17 @@ body{
   overflow:hidden;
   transition: 0.5s;
   z-index: 10;
+  background-color: #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card .user .imgBx img{
   position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  background-color: #ccc;
+  width: 70%;
+  height: 70%;
+  /* object-fit: cover; */
 }
   
 .card .user .content{
@@ -140,7 +144,8 @@ body{
 }
 
 .card.active .contact{
-  height: 325px;
+  /* height: 325px; */
+  height: auto;
 }
 
 .card .contact li{
