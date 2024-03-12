@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+.container{
+    margin: 20px auto;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+form{
+    width: 600px;
+    height: 60px;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+form input{
+    height: 25px;
+    border: 0;
+    border-bottom: 1px dashed black;
+}
+
+form input:focus{
+    outline: none;
+}
+
+form button{
+    background: blue;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+textarea{
+    width: 600px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    padding: 5px;
+}
