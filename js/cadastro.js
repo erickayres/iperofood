@@ -8,6 +8,9 @@ btn = document.querySelector('#btn');
 btn.addEventListener('click',()=>{
     console.log(tipo.value, nome.value, wpp.value);
     adicionaItem(tipo.value, nome.value, wpp.value);
+    nome.value = ''; wpp.value = ''
+    nome.focus();
+
 });
 
 document.addEventListener('DOMContentLoaded', function(){
