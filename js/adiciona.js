@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
       adicionaCategoria(categoria,icon);
 
+      ordenaItens(cadastros[categoria]);
+
       cadastros[categoria].forEach((loja, i)=>{
         adicionaItem(categoria,loja,i);
       });
@@ -82,4 +84,15 @@ function adicionaScript(){
   script = document.createElement('script');
   script.src = 'js/script.js';
   document.head.appendChild(script);
+}
+
+function ordenaItens(dados){
+  dados.sort((a,b) => {
+    const nomeA = a.nome.toLowerCase();
+    const nomeB = b.nome.toLowerCase();
+
+    if (nomeA < nomeB) return -1;
+    if (nomeA > nomeB) return 1;
+    return 0;
+  });
 }
